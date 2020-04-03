@@ -1,3 +1,11 @@
+/*
+ * @Author: 库建华
+ * @Date: 2020-03-31 23:07:33
+ * @LastEditors: 库建华
+ * @LastEditTime: 2020-04-03 21:36:13
+ * @Version: 1
+ * @Description:
+ */
 const path = require('path')
 
 // Theme API.
@@ -53,7 +61,8 @@ module.exports = (options, ctx) => {
         before: info => `<details class="custom-block details">${info ? `<summary>${info}</summary>` : ''}\n`,
         after: () => '</details>\n'
       }],
-      ['smooth-scroll', enableSmoothScroll]
+      ['smooth-scroll', enableSmoothScroll],
+      ['autobar']
     ]
   }
 }

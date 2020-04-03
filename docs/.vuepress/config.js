@@ -95,10 +95,10 @@ module.exports = {
       //     },
       //   ]
       // },
-      {
-        text: '踩过的坑',
-        link: '/guide/'
-      },
+      // {
+      //   text: '踩过的坑',
+      //   link: '/guide/'
+      // },
       {
         text: '源码（Github）',
         link: 'https://github.com/kujianhua/my_note_sound_code'
