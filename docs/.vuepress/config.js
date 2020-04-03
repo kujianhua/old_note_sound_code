@@ -100,8 +100,8 @@ module.exports = {
         link: '/guide/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: '源码（Github）',
+        link: 'https://github.com/kujianhua/my_note_sound_code'
       }
     ],
     sidebar: {
