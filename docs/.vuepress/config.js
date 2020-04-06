@@ -34,71 +34,23 @@ module.exports = {
   ],
 
   main:'layout/Layout.vue',
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
+
   themeConfig: {
     repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [{
+    sidebar:true,
+    nav: [
+      {
         text: '个人介绍',
         link: '/introduction/',
       },
-      // {
-      //   text: '笔记',
-      //   link: '',
-      //   items: [{
-      //       text: 'Node.js',
-      //       link: '/language/chinese/'
-      //     },
-      //     {
-      //       text: '前端',
-      //       link: '/language/japanese/',
-      //       items: [{
-      //           text: 'js',
-      //           link: '/language/chinese/'
-      //         },
-      //         {
-      //           text: 'css',
-      //           link: '/language/chinese/'
-      //         },
-      //         {
-      //           text: 'html',
-      //           link: '/language/chinese/'
-      //         },
-      //         {
-      //           text: 'vue.js',
-      //           link: '/language/chinese/'
-      //         },
-      //         {
-      //           text: 'react.js',
-      //           link: '/language/chinese/'
-      //         },
-      //       ]
-      //     },
-      //     {
-      //       text: 'Java',
-      //       link: '/language/japanese/',
-      //       items: [{
-      //       }]
-      //     },
-      //     {
-      //       text: 'SQL',
-      //       link: '/language/japanese/',
-      //       items: [{
-      //       }]
-      //     },
-      //   ]
-      // },
-      // {
-      //   text: '踩过的坑',
-      //   link: '/guide/'
-      // },
+      {
+        text: '前端',
+        link: '/02.前端笔记/',
+      },
       {
         text: '源码（Github）',
         link: 'https://github.com/kujianhua/my_note_sound_code'

@@ -2,7 +2,7 @@
 
 ## 插件
 
-### 自动生成侧边栏（boboidream/vuepress-bar）
+### 自动生成侧边栏[（boboidream/vuepress-bar）](https://github.com/boboidream/vuepress-bar)
 
 #### 安装 `npm install -D boboidream/vuepress-bar`
 
