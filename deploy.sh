@@ -31,3 +31,8 @@ git commit -m 'deploy'
  git push -f https://github.com/kujianhua/my_note.git master:gh-pages
 
 cd -
+
+git add -A
+git commit -m '天天向上'
+git status
+git push
