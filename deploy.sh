@@ -33,6 +33,6 @@ git commit -m 'deploy'
 cd -
 
 git add -A
-git commit -m '天天向上'
+git commit -m `date +%Y年%m月%d日%H:%M:%S`
 git status
 git push
