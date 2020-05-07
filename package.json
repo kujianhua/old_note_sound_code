@@ -1,13 +1,16 @@
 {
   "name": "vuepress",
   "version": "0.0.1",
-  "description": "",
+  "description": "<!--\r  * @Author: 库建华\r  * @Date: 2020-03-31 23:37:13\r  * @LastEditors: 库建华\r  * @LastEditTime: 2020-03-31 23:40:28\r  * @Version: 1\r  * @Description:\r  -->\r # vuepress 编译后地址 [库建华在线文档](https://kujianhua.github.io/my_note/)",
   "main": "index.js",
   "authors": {
     "name": "",
     "email": ""
   },
-  "repository": "/vuepress",
+  "repository": {
+    "type": "git",
+    "url": "/vuepress"
+  },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
@@ -19,5 +22,9 @@
     "vuepress": "^1.3.1",
     "vuepress-plugin-autobar": "github:boboidream/vuepress-bar"
   },
-  "author": "库建华 <2860342721@qq.com>"
+  "author": "库建华 <2860342721@qq.com>",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {}
 }
