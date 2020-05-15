@@ -60,3 +60,67 @@ Uncaught ReferenceError: ut is not defined
 ### 配置问题
 
 vue的\<vue-ueditor-wrap\>节点，的`config`属性，需要配置好`UEDITOR_HOME_URL`,默认为**static/UEditor/**,因为我们文件名为static/UE,所以导致，一直那不到一些插件的文件，文件路径都对不上，拿个鬼勒~
+
+### 字数限制
+
+原定字数限制为转换前字数（即为用户输入明文字符数）；
+更新
+```javascript
+ var count = editor.getContentLength(false);//源码为true,修改为false即可
+```
+可将期设定为转换后字符数，方便后端做字符限制；
+
+### 字数限制 升级版
+
+实现控制转换后字符数；
+展示：`当前明文 4 个字符，当前转后 11 个字符，还剩余9989 个字符`
+
+`ueditor.config.js`
+```
+        ,wordCountMsg:'当前明文 {#sound_count} 个字符，当前转后 {#count} 个字符，还剩余{#leave} 个字符'   //当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符
+
+```
+
+`ueditor.all.js`围绕**getContentLength()**方法，的修改
+```javascript
+ var {count,sound_count} = editor.getContentLength();
+                if (count > max) {
+                    countDom.innerHTML = errMsg;
+                    editor.fireEvent("wordcountoverflow");
+                } else {
+                    countDom.innerHTML = msg.replace("{#leave}", max - count).replace("{#count}", count).replace("{#sound_count}",sound_count);
+                }
+...
+getContentLength: function () {
+            var count = this.getContent(false,false,true).length;
+            var sound_count = this.getContentTxt().replace(/[\t\r\n]+/g, '').length;
+            return {count, sound_count};
+        },
+```
+
+### 本地保存成功
+
+组件会定期提示**本地保存成功**
+
+修改外码如下
+```javascript
+  ...
+ 'contentchange': function () {
+                //解决本地保存提示
+                if (!me.getOpt('enableAutoSave')) {
+                    return;
+                }
+                //解决本地保存提示 end
+
+                if ( !saveKey ) {
+                    return;
+                }
+
+                if ( me._saveFlag ) {
+                    window.clearTimeout( me._saveFlag );
+                }
+  ...
+```
+
+## 图片直传OSS
+
