@@ -1,8 +1,8 @@
 ###
  # @Author: 库建华
  # @Date: 2020-03-30 23:08:55
- # @LastEditors: 库建华
- # @LastEditTime: 2020-03-30 23:22:23
+ # @LastEditors: Please set LastEditors
+ # @LastEditTime: 2021-11-10 09:11:37
  # @Version: 1
  # @Description:
  ###
@@ -12,7 +12,8 @@
 set -e
 
 # 生成静态文件
-vuepress build docs
+# vuepress build docs
+yarn build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
