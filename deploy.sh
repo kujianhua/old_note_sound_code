@@ -2,7 +2,7 @@
  # @Author: 库建华
  # @Date: 2020-03-30 23:08:55
  # @LastEditors: Please set LastEditors
- # @LastEditTime: 2021-11-10 09:30:02
+ # @LastEditTime: 2021-11-10 09:45:02
  # @Version: 1
  # @Description:
  ###
@@ -30,7 +30,8 @@ git commit -m `date +%Y年%m月%d日%H:%M:%S`
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 #  git push -f https://github.com/kujianhua/my_note.git master:gh-pages
- git push -f git@github.com:kujianhua/my_note.git master:gh-pages
+#  git push -f git@github.com:kujianhua/my_note.git master:gh-pages
+ git push -f git@github.com:kujianhua/note.git master:gh-pages
 
 cd -
 
