@@ -29,9 +29,9 @@ git commit -m `date +%Y年%m月%d日%H:%M:%S`
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-#  git push -f https://github.com/kujianhua/my_note.git master:gh-pages
+ git push -f https://github.com/kujianhua/my_note.git master:gh-pages
 #  git push -f git@github.com:kujianhua/my_note.git master:gh-pages
- git push -f git@github.com:kujianhua/note.git master:gh-pages
+#  git push -f git@github.com:kujianhua/note.git master:gh-pages
 
 cd -
 

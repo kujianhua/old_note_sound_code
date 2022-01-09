@@ -51,10 +51,10 @@ module.exports = {
         text: '前端',
         link: '/02.前端笔记/',
       },
-      {
-        text: '源码（Github）',
-        link: 'https://github.com/kujianhua/my_note_sound_code'
-      }
+      // {
+      //   text: '源码（Github）',
+      //   link: 'https://github.com/kujianhua/my_note_sound_code'
+      // }
     ],
     sidebar: {
       '/introduction/': [{
