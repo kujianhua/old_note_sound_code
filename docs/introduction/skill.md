@@ -2,10 +2,13 @@
 
 ## 前端
 
-+ Vue框架
-+ React框架
-+ Less
++ Vue
++ React
++ Less Sass
 + webpack
++ umi
++ Ts
++ 前端工程化
 
 ## APP
 
@@ -14,9 +17,9 @@
 ## 后端
 
 + Node
-+ express
-+ SQL
-+ Java
++ kao egg
++ njinx
+
 
 ## 计算机基础
 

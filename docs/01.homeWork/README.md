@@ -1,5 +1,11 @@
 # Vuepress 学习笔记
 
+## 安装 vuepress
+
+```
+  npm i vuepress
+```
+
 ## 插件
 
 ### 自动生成侧边栏[（boboidream/vuepress-bar）](https://github.com/boboidream/vuepress-bar)
@@ -40,3 +46,6 @@ module.exports = {
 >> 解决办法:暂无
 >
 > 2. 配置问题
+>
+> 3. sh在window下不能执行
+>> 解决方案: ~Git bash~ 中使用 sh xxx.sh 文件可以运行 sh脚本
